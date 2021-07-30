@@ -1,3 +1,8 @@
 {
-    "body": "{\"name\":\"Antonio Luiz\",\"email\":\"toninho@CV.com\"}"
+    "body": "{\"name\":\"Laura Lima\",\"email\":\"laura@lima.com\"}",
+    "requestContext": {
+      "identity": {
+        "cognitoIdentityId": "USER-SUB-1234"
+      }
+    }
   }

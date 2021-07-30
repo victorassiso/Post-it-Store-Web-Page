@@ -3,14 +3,13 @@ import handler from "./../../../libs/handler-lib";
 import dynamoDb from "./../../../libs/dynamodb-lib";
 
 export const main = handler(async (event, context) => {
-  const data = JSON.parse(event.body);
   const params = {
     TableName: "order",
     Item: {
       // The attributes of the item to be created
       order_id: uuid.v1(), // The id of the author
       date: Date.now(), // A unique uuid
-      user_id: data.user_id, // Parsed from request body
+      user_id: event.requestContext.identity.cognitoIdentityId, // Parsed from request body
     },
   };
   await dynamoDb.put(params);

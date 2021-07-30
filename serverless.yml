@@ -39,33 +39,39 @@ functions:
       - http:
           path: user
           method: post
+          authorizer: aws_iam
   getUser:
     handler: ./src/routes/user/getUser.main
     events:
       - http:
           path: user/{id}
           method: get
+          authorizer: aws_iam
   createOrder:
     handler: ./src/routes/order/createOrder.main
     events:
       - http:
           path: order
           method: post
+          authorizer: aws_iam
   listOrders:
     handler: ./src/routes/order/listOrders.main
     events:
       - http:
           path: order/{id}
           method: get
+          authorizer: aws_iam
   createItem:
     handler: ./src/routes/item/createItem.main
     events:
       - http:
           path: item
           method: post
+          authorizer: aws_iam
   listItems:
     handler: ./src/routes/item/listItems.main
     events:
       - http:
           path: item/{order_id}
           method: get
+          authorizer: aws_iam
