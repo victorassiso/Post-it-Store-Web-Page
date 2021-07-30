@@ -1,0 +1,24 @@
+{
+  "name": "notes-api",
+  "version": "1.0.0",
+  "description": "A Serverless starter that adds ES6, TypeScript, serverless-offline, linting, environment variables, and unit test support. Part of the [Serverless Stack](http://serverless-stack.com) guide.",
+  "main": "handler.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "serverless-bundle test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "aws-sdk": "^2.957.0",
+    "serverless-offline": "^8.0.0",
+    "serverless-bundle": "^4.4.0"
+  },
+  "dependencies": {
+    "serverless-dotenv-plugin": "^3.9.0",
+    "uuid": "^7.0.3"
+  }
+}
