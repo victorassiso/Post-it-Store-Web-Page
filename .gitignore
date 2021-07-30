@@ -42,7 +42,6 @@ Session.vim
 
 # Serverless
 .webpack
-.serverless
 
 # env
 env.yml
@@ -51,11 +50,8 @@ env.yml
 # Jetbrains IDEs
 .idea
 
-
-src/routes/item
 src/routes/product
 src/routes/categorie
 
 mocks/categorie
-mocks/item
 mocks/product

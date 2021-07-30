@@ -5,12 +5,13 @@ import dynamoDb from "./../../../libs/dynamodb-lib";
 export const main = handler(async (event, context) => {
   const data = JSON.parse(event.body);
   const params = {
-    TableName: "order",
+    TableName: "item",
     Item: {
       // The attributes of the item to be created
-      order_id: uuid.v1(), // The id of the author
-      date: Date.now(), // A unique uuid
-      user_id: data.user_id, // Parsed from request body
+      item_id: uuid.v1(), // The id of the author
+      order_id: data.order_id,
+      product_id: data.product_id,
+      quantity: data.quantity,
     },
   };
   await dynamoDb.put(params);
