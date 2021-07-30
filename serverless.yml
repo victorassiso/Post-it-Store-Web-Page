@@ -43,14 +43,26 @@ provider:
 
 functions:
   createUser:
-    handler: ./src/routes/createUser.main
+    handler: ./src/routes/user/createUser.main
     events:
       - http:
           path: user
           method: post
   getUser:
-    handler: ./src/routes/getUser.main
+    handler: ./src/routes/user/getUser.main
     events:
       - http:
           path: user/{id}
+          method: get
+  createOrder:
+    handler: ./src/routes/order/createOrder.main
+    events:
+      - http:
+          path: order/{user_id}
+          method: post
+  listOrders:
+    handler: ./src/routes/order/listOrders.main
+    events:
+      - http:
+          path: order/{id}
           method: get
