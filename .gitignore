@@ -51,9 +51,6 @@ env.yml
 # Jetbrains IDEs
 .idea
 
-src/routes/product/listProducts.js
-src/routes/product/listProductsByCategorie.js
-
 src/routes/categorie
 
 mocks/categorie

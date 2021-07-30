@@ -39,6 +39,7 @@ functions:
       - http:
           path: user
           method: post
+          cors: true
           authorizer: aws_iam
   getUser:
     handler: ./src/routes/user/getUser.main
@@ -46,6 +47,7 @@ functions:
       - http:
           path: user/{id}
           method: get
+          cors: true
           authorizer: aws_iam
   createOrder:
     handler: ./src/routes/order/createOrder.main
@@ -53,6 +55,7 @@ functions:
       - http:
           path: order
           method: post
+          cors: true
           authorizer: aws_iam
   listOrders:
     handler: ./src/routes/order/listOrders.main
@@ -60,6 +63,7 @@ functions:
       - http:
           path: order/{id}
           method: get
+          cors: true
           authorizer: aws_iam
   createItem:
     handler: ./src/routes/item/createItem.main
@@ -67,6 +71,7 @@ functions:
       - http:
           path: item
           method: post
+          cors: true
           authorizer: aws_iam
   listItems:
     handler: ./src/routes/item/listItems.main
@@ -74,6 +79,7 @@ functions:
       - http:
           path: item/{order_id}
           method: get
+          cors: true
           authorizer: aws_iam
   getProduct:
     handler: ./src/routes/product/getProduct.main
@@ -81,4 +87,5 @@ functions:
       - http:
           path: /product/{categorie_id}/{product_id}
           method: get
+          cors: true
           authorizer: aws_iam
