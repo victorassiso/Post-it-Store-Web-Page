@@ -75,3 +75,10 @@ functions:
           path: item/{order_id}
           method: get
           authorizer: aws_iam
+  getProduct:
+    handler: ./src/routes/product/getProduct.main
+    events:
+      - http:
+          path: /product/{categorie_id}/{product_id}
+          method: get
+          authorizer: aws_iam
