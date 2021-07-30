@@ -48,3 +48,9 @@ functions:
       - http:
           path: user
           method: post
+  getUser:
+    handler: ./src/routes/getUser.main
+    events:
+      - http:
+          path: user/{id}
+          method: get
