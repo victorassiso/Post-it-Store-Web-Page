@@ -10,7 +10,7 @@ import { Auth } from "aws-amplify";
 
 //Internal References
   //.css
-  import "./Signup.css";
+  import "../../css/containers/Signup.css";
 
   //components
   import LoaderButton from "../components/LoaderButton";

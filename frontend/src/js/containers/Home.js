@@ -1,6 +1,5 @@
 import React from "react";
-import "./Home.css";
-import exampleCard from '/Images/exampleCard.jpg';
+import "../../css/containers/Home.css";
 
 export default function Home() {
   return (
@@ -17,19 +16,7 @@ export default function Home() {
             
             <div className="ProductCard">
               <div className="ProductImage">
-                <a className="Product1link" >
-                  <exampleCard
-                    alt="Product 1"
-                    scr="/exampleCard.jpg"
-                    objectFit="fill"
-                    layout="fill"
-                    quality={100}
-                    width={300}
-                    height={300}
-                    className="ProductImage"
-                  />
-                  Product 1
-                </a>
+                <p>Product</p>
               </div>
               <div className="ProductInfo">
                 <h5>Example Product 1</h5>
@@ -39,7 +26,7 @@ export default function Home() {
 
             <div className="ProductCard">
               <div className="ProductImage">
-                <img src="./Images/exampleCard.jpg" alt="2" />
+                <img src="/img/exampleCard.jpg" alt="2" />
               </div>
               <div className="ProductInfo">
                 <h5>Example Product 2</h5>

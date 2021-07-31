@@ -12,9 +12,9 @@ import { Auth } from "aws-amplify";
 
 //Internal references
 import Routes from "./Routes";
-import { AppContext } from "./libs/contextLib";
-import "./App.css";
-import { onError } from "./libs/errorLib";
+import { AppContext } from "./../libs/contextLib";
+import "./../../css/main/App.css";
+import { onError } from "./../libs/errorLib";
 
 //Main
 function App() {

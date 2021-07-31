@@ -42,6 +42,7 @@
   },
   "devDependencies": {
     "file-loader": "^6.1.1",
+    "url-loader": "^4.1.1",
     "webpack-cli": "^4.7.2"
   }
 }
