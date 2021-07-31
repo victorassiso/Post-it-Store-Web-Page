@@ -1,2 +1,13 @@
-.App {
+.navbarCustom {
+    background-color: #3B9597;
+    height: 21%;
+    color: white !important;
+}
+
+.navbarCustom .nav-link {
+    color: #FFFFFF !important;
+}
+
+.navbarCustom .navbar-brand {
+    color: #FFFFFF !important;
 }

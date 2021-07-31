@@ -1,3 +1,5 @@
+
+
 .Home .lander {
     padding: 80px 0;
     text-align: center;
@@ -7,3 +9,28 @@
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
   }
+
+.ProductFilter {
+  display: flex;
+}
+
+.Products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.PorductCard {
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis: 16%;
+
+  display: flex;
+}
+
+.ProductImage img {
+  max-width: 100%;
+}
+
+.ProductInfo {
+  margin-top: auto;
+}
