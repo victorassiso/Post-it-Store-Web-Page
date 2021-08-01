@@ -3,40 +3,24 @@ import "../../css/containers/Home.css";
 
 export default function Home() {
   return (
-    <div className="Home">
-      <div className="lander">
+    <div className="home">
+      <div className="header">
         <h1>Stick-it</h1>
         <p className="text-muted">sticky notes to your sticky ideias</p>
       </div>
 
-      {/*Products*/}
-      <div className="ProductFilter">
-        <div className="Sort">
-          <section className="Products">
-            
-            <div className="ProductCard">
-              <div className="ProductImage">
-                <p>Product</p>
-              </div>
-              <div className="ProductInfo">
-                <h5>Example Product 1</h5>
-                <h6>$12.50</h6>
-              </div>
-            </div>
+        {/*Products*/}
+        <div className="ProductsGalery">
+          
+          <div class="card">
+            <img src="/img/logoFBpng.png" alt="Denim Jeans" />
+            <h1>Tailored Jeans</h1>
+            <p class="price">$19.99</p>
+            <p>Some text about the jeans..</p>
+            <p><button>Add to Cart</button></p>
+          </div>
 
-            <div className="ProductCard">
-              <div className="ProductImage">
-                <img src="/img/exampleCard.jpg" alt="2" />
-              </div>
-              <div className="ProductInfo">
-                <h5>Example Product 2</h5>
-                <h6>$12.50</h6>
-              </div>
-            </div>
-
-          </section>
         </div>
-      </div>
     </div>
   );
 }
