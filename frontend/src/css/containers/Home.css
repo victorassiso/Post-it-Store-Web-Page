@@ -1,12 +1,58 @@
-.home .header {
+.home {
+
+
+}
+
+.home .Banner {
     padding: 80px 0;
     text-align: center;
+
+
   }
   
-  .home .header h1 {
+  .home .Banner h1 {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
   }
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+
+
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem;
+}
+
+.col-1 {
+  flex: 1;
+
+
+}
+
+.col-2 {
+  flex: 2;
+
+
+}
+
+.block {
+  background-color: rgb(230, 230, 230);
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+
+
+}
+
+.row.center {
+  align-items: center;
+}
 
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -21,12 +67,12 @@
     font-size: 22px;
   }
   
-  .cards button {
+  .AddToCartButton {
     border: none;
     outline: 0;
     padding: 12px;
     color: white;
-    background-color: #000;
+    background-color: #3B9597;
     text-align: center;
     cursor: pointer;
     width: 100%;

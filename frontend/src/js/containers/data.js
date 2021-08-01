@@ -2,21 +2,15 @@ const data = {
     products: [
         {
             product_id: '1',
-            name: 'Macbook',
-            price: 1400,
-            image: 'https://picsum.photos/id/180/2400/1600',
+            name: 'Block Notes',
+            price: 11.99,
+            image: 'https://post-it-dev-serverlessdeploymentbucket-wwn8n1t5lex7.s3.sa-east-1.amazonaws.com/serverless/Post-it/dev/Images/products/blockNotes.jpg',
         },
         {
             product_id: '2',
-            name: 'Old Car',
-            price: 2400,
-            image: 'https://picsum.photos/id/180/2400/265',
-        },
-        {
-            product_id: '3',
-            name: 'W Shoes',
-            price: 1000,
-            image: 'https://picsum.photos/id/21/3008/2008',
+            name: 'Flags',
+            price: 9.99,
+            image: 'https://post-it-dev-serverlessdeploymentbucket-wwn8n1t5lex7.s3.sa-east-1.amazonaws.com/serverless/Post-it/dev/Images/products/flags.jpeg',
         },
     ]
 }
